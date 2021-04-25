@@ -1,0 +1,368 @@
+{
+    "Atlas: Chapter": {
+        "prefix": "atlas-chapter",
+        "body": [
+            "[[${1:unique_chapter_id}]]",
+            "== ${2:chapter title}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: A-Head": {
+        "prefix": "atlas-a-head",
+        "body": [
+            "=== ${1:${TM_SELECTED_TEXT:a-head title}}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: B-Head": {
+        "prefix": "atlas-b-head",
+        "body": [
+            "==== ${1:${TM_SELECTED_TEXT:b-head title}}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: C-Head": {
+        "prefix": "atlas-c-head",
+        "body": [
+            "=== ${1:${TM_SELECTED_TEXT:c-head title}}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: Part": {
+        "prefix": "atlas-part",
+        "body": [
+            "[[${1:unique_part_id}]]",
+            "[part]",
+            "== ${2:${TM_SELECTED_TEXT:part title}}",
+            "",
+            "[partintro]",
+            "--",
+            "$0",
+            "--"
+        ]
+    },
+    "Atlas: Preface": {
+        "prefix": "atlas-preface",
+        "body": [
+            "[preface]",
+            "== ${1:preface title}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: Foreword": {
+        "prefix": "atlas-foreword",
+        "body": [
+            "[foreword]",
+            "== Foreword",
+            "",
+            "$0",
+            "[role=\"byline\"]",
+            "${1:foreword author}"
+        ]
+    },
+    "Atlas: Afterword": {
+        "prefix": "atlas-afterword",
+        "body": [
+            "[appendix]",
+            "[role=\"afterword\"",
+            "== Afterword",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: Dedication": {
+        "prefix": "atlas-dedication",
+        "body": [
+            "[dedication]",
+            "== Dedication",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: Glossary": {
+        "prefix": "atlas-glossary",
+        "body": [
+            "[[glossary]]",
+            "== Glossary",
+            "",
+            "[glossary]",
+            "$0"
+        ]
+    },
+    "Atlas: Glossary Term": {
+        "prefix": "atlas-glossary-term",
+        "body": "${1:${TM_SELECTED_TEXT:term}}::${2:definition}"
+    },
+    "Atlas: Appendix": {
+        "prefix": "atlas-appendix",
+        "body": [
+            "[appendix]",
+            "[[${1:unique_appendix_id}]]",
+            "== ${2:appendix title}",
+            "",
+            "$0"
+        ]
+    },
+    "Atlas: Chapter Contributor": {
+        "prefix": "atlas-chapter-contributor",
+        "body": [
+            "[role=\"byline\"]",
+            "${1:chapter contributor}"
+        ]
+    },
+    "Atlas: Chapter Contributor (2nd line)": {
+        "prefix": "atlas-chapter-contributor-2nd-line",
+        "body": [
+            "[role=\"byline cont\"]",
+            "${1:chapter contributor 2nd line}"
+        ]
+    },
+    "Atlas: Italic": {
+        "prefix": "atlas-italic",
+        "body": "_${1:${TM_SELECTED_TEXT:text}}_"
+    },
+    "Atlas: Bold": {
+        "prefix": "atlas-bold",
+        "body": "*${1:${TM_SELECTED_TEXT:text}}*"
+    },
+    "Atlas: Constant Width": {
+        "prefix": "atlas-constant-width",
+        "body": "+${1:${TM_SELECTED_TEXT:text}}+"
+    },
+    "Atlas: Subscript": {
+        "prefix": "atlas-subscript",
+        "body": "~${1:${TM_SELECTED_TEXT:text}}~"
+    },
+    "Atlas: Superscript": {
+        "prefix": "atlas-superscript",
+        "body": "^${1:${TM_SELECTED_TEXT:text}}^"
+    },
+    "Atlas: Hyperlink": {
+        "prefix": "atlas-Hyperlink",
+        "body": "${1:url}[${2:${TM_SELECTED_TEXT:title}}]"
+    },
+    "Atlas: Sidebar": {
+        "prefix": "atlas-sidebar",
+        "body": [
+            ".${1:sidebar title}",
+            "****",
+            "${2:${TM_SELECTED_TEXT:text}}",
+            "****"
+        ]
+    },
+    "Atlas: Note": {
+        "prefix": "atlas-note",
+        "body": [
+            "[NOTE]",
+            "====",
+            "${0:${TM_SELECTED_TEXT}}",
+            "===="
+        ]
+    },
+    "Atlas: Tip": {
+        "prefix": "atlas-tip",
+        "body": [
+            ".${1:tip title}",
+            "[TIP]",
+            "====",
+            "${0:${TM_SELECTED_TEXT}}",
+            "===="
+        ]
+    },
+    "Atlas: Warning": {
+        "prefix": "atlas-warning",
+        "body": [
+            ".${1:tip title}",
+            "[WARNING]",
+            "====",
+            "${0:${TM_SELECTED_TEXT}}",
+            "===="
+        ]
+    },
+    "Atlas: Footnote": {
+        "prefix": "atlas-footnote",
+        "body": "footnote:${1:${TM_SELECTED_TEXT:text}}"
+    },
+    "Atlas: Quote": {
+        "prefix": "atlas-quote",
+        "body": [
+            "[quote, ${1:quote author}]",
+            "____",
+            "${0:${TM_SELECTED_TEXT:text}}",
+            "____"
+        ]
+    },
+    "Atlas: Figure": {
+        "prefix": "atlas-figure",
+        "body": [
+            "[[${1:unique_id}]]",
+            ".${1:figure title}",
+            "image::${2:image path}[\"${3:alt text}\"]"
+        ]
+    },
+    "Atlas: Image": {
+        "prefix": "atlas-image",
+        "body": "image::${1:image path}[\"${2:alt text}\"]"
+    },
+    "Atlas: List (Bulleted)": {
+        "prefix": "atlas-list-bulleted",
+        "body": [
+            "* ${1:${TM_SELECTED_TEXT:first item}}",
+            "* ${2:second item)",
+        ]
+    },
+    "Atlas: List (Ordered)": {
+        "prefix": "atlas-list-bullet-ordered",
+        "body": [
+            ". ${1:${TM_SELECTED_TEXT:first item}}",
+            ". ${2:second item)",
+        ]
+    },
+    "Atlas: List (Labeled)": {
+        "prefix": "atlas-list-labeled",
+        "body": [
+            "${1:first label}::",
+            "  ${2:first definition/description}",
+            "${3:second label}::",
+            "  ${4:second definition/description}",
+        ]
+    },
+    "Atlas: Table": {
+        "prefix": "atlas-table",
+        "body": [
+            ".${1:table title}",
+            "|=======",
+            "|${2:Header Col 1|Header Col 2|Header Col 3}",
+            "|${3:Content Col 1|Content Col 2|Content Col 3}",
+            "|=======",
+        ]
+    },
+    "Atlas: Code (simple)": {
+        "prefix": "atlas-code-simple",
+        "body": [
+            "----",
+            "${0:${TM_SELECTED_TEXT:code}}",
+            "----"
+        ]
+    },
+    "Atlas: Code (formal)": {
+        "prefix": "atlas-code-formal",
+        "body": [
+            "[[${1:unique_ref_id}]]",
+            ".${2:code block title}",
+            "====",
+            "----",
+            "${0:${TM_SELECTED_TEXT:code}}",
+            "----",
+            "===="
+        ]
+    },
+    "Atlas: Code Highlighted (simple)": {
+        "prefix": "atlas-code-highlighted-simple",
+        "body": [
+            "[source:${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "----",
+            "${0:${TM_SELECTED_TEXT:code}}",
+            "----"
+        ]
+    },
+    "Atlas: Code Highlighted (formal)": {
+        "prefix": "atlas-code-highlighted-formal",
+        "body": [
+            "[[${1:unique_ref_id}]]",
+            ".${2:code block title}",
+            "====",
+            "[source:${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "----",
+            "${0:${TM_SELECTED_TEXT:code}}",
+            "----",
+            "===="
+        ]
+    },
+    "Atlas: Code External (simple)": {
+        "prefix": "atlas-code-external-simple",
+        "body": [
+            "----",
+            "include::${1:path to code}[]",
+            "----"
+        ]
+    },
+    "Atlas: Code External (formal)": {
+        "prefix": "atlas-code-external-formal",
+        "body": [
+            "[[${1:unique_ref_id}]]",
+            ".${2:code block title}",
+            "====",
+            "----",
+            "include::${3:path to code}[]",
+            "----",
+            "===="
+        ]
+    },
+    "Atlas:  Code External Highlighted (simple)": {
+        "prefix": "atlas-code-external-highlighted-simple",
+        "body": [
+            "[source:${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "----",
+            "include::${2:path to code}[]",
+            "----"
+        ]
+    },
+    "Atlas: Code External Highlighted (formal)": {
+        "prefix": "atlas-code-external-highlighted-formal",
+        "body": [
+            "[[${1:unique_ref_id}]]",
+            ".${2:code block title}",
+            "====",
+            "[source:${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "----",
+            "include::${4:path to code}[]",
+            "----",
+            "===="
+        ]
+    },
+    "Atlas: Code Callout": {
+        "prefix": "atlas-code-callout",
+        "body": "<${1:line no}> ${0:callout}"
+    },
+    "Atlas: Cross-Reference": {
+        "prefix": "atlas-cross-reference",
+        "body": "<<${1:target id}>>"
+    },
+    "Atlas: Passthrough (Inline)": {
+        "prefix": "atlas-passthrough-inline",
+        "body": "pass:[${1:inline html]"
+    },
+    "Atlas: Passthrough (Block)": {
+        "prefix": "atlas-passthrough-block",
+        "body": [
+            "++++",
+            "${1:${TM_SELECTED_TEXT:html}}",
+            "++++"
+        ]
+    },
+    "Atlas: Latex Math (Inline)": {
+        "prefix": "atlas-latexmath-inline",
+        "body": "latexmath:[\\(${1:inline latex math equation\\)]"
+    },
+    "Atlas: Latex Math (Block)": {
+        "prefix": "atlas-latexmath-block",
+        "body": [
+            "[latexmath]",
+            "++++",
+            "\\begin{equation}",
+            "${1:${TM_SELECTED_TEXT:latex math equations}}",
+            "\\end{equation}",
+            "++++"
+        ]
+    },
+    "Atlas: Line Break Prevention": {
+        "prefix": "atlas-line-break-prevention",
+        "body": "pass:[<span class=\"keep-together\">${1:${TM_SELECTED_TEXT:text}}</span>]"
+    }
+}
