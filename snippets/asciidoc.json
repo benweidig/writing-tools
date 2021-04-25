@@ -213,14 +213,14 @@
         "prefix": "atlas-list-bulleted",
         "body": [
             "* ${1:${TM_SELECTED_TEXT:first item}}",
-            "* ${2:second item)",
+            "* ${2:second item)"
         ]
     },
     "Atlas: List (Ordered)": {
         "prefix": "atlas-list-bullet-ordered",
         "body": [
             ". ${1:${TM_SELECTED_TEXT:first item}}",
-            ". ${2:second item)",
+            ". ${2:second item)"
         ]
     },
     "Atlas: List (Labeled)": {
@@ -229,7 +229,7 @@
             "${1:first label}::",
             "  ${2:first definition/description}",
             "${3:second label}::",
-            "  ${4:second definition/description}",
+            "  ${4:second definition/description}"
         ]
     },
     "Atlas: Table": {
@@ -239,7 +239,7 @@
             "|=======",
             "|${2:Header Col 1|Header Col 2|Header Col 3}",
             "|${3:Content Col 1|Content Col 2|Content Col 3}",
-            "|=======",
+            "|======="
         ]
     },
     "Atlas: Code (simple)": {
