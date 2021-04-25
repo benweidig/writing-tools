@@ -18,6 +18,6 @@ But they might be helpful for others, so I decided to make a public repo for the
 CC0.
 
 All product names, logos, and brands are property of their respective owners.
-All company, product and service names used in this website are for identification purposes only. 
+All company, product and service names used are for identification purposes only. 
 
-The content of the provided links are not under my control, so I cannot assume any liability for such external content.
+The content of the provided links are not under my control, so I cannot assume any liability for external content.
