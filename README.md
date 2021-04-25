@@ -1,4 +1,4 @@
-# Collection of different tools and resources for writing an O'Reilly book
+# Collection of tools and resources for writing an O'Reilly book
 
 This is more like a personal collection to gather all (publicly available) resources at a single place.
 But they might be helpful for others, so I decided to make a public repo for them.
