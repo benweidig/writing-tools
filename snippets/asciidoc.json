@@ -265,7 +265,7 @@
     "Atlas: Code Highlighted (simple)": {
         "prefix": "atlas-code-highlighted-simple",
         "body": [
-            "[source:${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "[source,${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
             "----",
             "${0:${TM_SELECTED_TEXT:code}}",
             "----"
@@ -277,7 +277,7 @@
             "[[${1:unique_ref_id}]]",
             ".${2:code block title}",
             "====",
-            "[source:${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "[source,${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
             "----",
             "${0:${TM_SELECTED_TEXT:code}}",
             "----",
@@ -307,7 +307,7 @@
     "Atlas:  Code External Highlighted (simple)": {
         "prefix": "atlas-code-external-highlighted-simple",
         "body": [
-            "[source:${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "[source,${1|java,kotlin,scala,clojure,swift,haskell,lua|}]",
             "----",
             "include::${2:path to code}[]",
             "----"
@@ -319,7 +319,7 @@
             "[[${1:unique_ref_id}]]",
             ".${2:code block title}",
             "====",
-            "[source:${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
+            "[source,${3|java,kotlin,scala,clojure,swift,haskell,lua|}]",
             "----",
             "include::${4:path to code}[]",
             "----",
