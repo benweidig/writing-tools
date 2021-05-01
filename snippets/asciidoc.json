@@ -177,7 +177,7 @@
     "Atlas: Warning": {
         "prefix": "atlas-warning",
         "body": [
-            ".${1:tip title}",
+            ".${1:warning title}",
             "[WARNING]",
             "====",
             "${0:${TM_SELECTED_TEXT}}",
@@ -186,7 +186,7 @@
     },
     "Atlas: Footnote": {
         "prefix": "atlas-footnote",
-        "body": "footnote:${1:${TM_SELECTED_TEXT:text}}"
+        "body": "footnote:[${1:${TM_SELECTED_TEXT:text}}]"
     },
     "Atlas: Quote": {
         "prefix": "atlas-quote",
@@ -202,7 +202,7 @@
         "body": [
             "[[${1:unique_id}]]",
             ".${1:figure title}",
-            "image::${2:image path}[\"${3:alt text}\"]"
+            "image::${2:figure path}[\"${3:alt text}\"]"
         ]
     },
     "Atlas: Image": {
@@ -213,6 +213,7 @@
         "prefix": "atlas-list-bulleted",
         "body": [
             "* ${1:${TM_SELECTED_TEXT:first item}}",
+            "",
             "* ${2:second item)"
         ]
     },
@@ -220,6 +221,7 @@
         "prefix": "atlas-list-bullet-ordered",
         "body": [
             ". ${1:${TM_SELECTED_TEXT:first item}}",
+            "",
             ". ${2:second item)"
         ]
     },
@@ -228,6 +230,7 @@
         "body": [
             "${1:first label}::",
             "  ${2:first definition/description}",
+            "",
             "${3:second label}::",
             "  ${4:second definition/description}"
         ]
@@ -288,7 +291,7 @@
         "prefix": "atlas-code-external-simple",
         "body": [
             "----",
-            "include::${1:path to code}[]",
+            "include::${1:path to code file}[]",
             "----"
         ]
     },
@@ -336,7 +339,7 @@
     },
     "Atlas: Passthrough (Inline)": {
         "prefix": "atlas-passthrough-inline",
-        "body": "pass:[${1:inline html]"
+        "body": "pass:[${1:inline html}]"
     },
     "Atlas: Passthrough (Block)": {
         "prefix": "atlas-passthrough-block",
