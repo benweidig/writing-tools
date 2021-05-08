@@ -6,7 +6,7 @@
 
 # SETTINGS
 FONT="Courier"
-FONT_SIZE="24"
+FONT_SIZE="14"
 
 if [[ -n "$DEBUG" ]]; then
     set -x
