@@ -25,6 +25,12 @@ Must be called with the figures folder as first argument.
 
 Requires `convert` (ImageMagick).
 
+## cross-ref-lint.sh
+
+Validates that all used cross-references are found.
+
+Must be called with the figures folder as first argument.
+
 ## Makefile
 
 Glueing it all together.
