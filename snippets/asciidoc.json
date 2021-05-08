@@ -201,8 +201,8 @@
         "prefix": "atlas-figure",
         "body": [
             "[[${1:unique_id}]]",
-            ".${1:figure title}",
-            "image::${2:figure path}[\"${3:alt text}\"]"
+            ".${2:figure title}",
+            "image::${3:figure path}[\"${4:alt text}\"]"
         ]
     },
     "Atlas: Image": {
