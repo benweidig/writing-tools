@@ -33,7 +33,7 @@ figures-lint:
 	./scripts/figures-lint.sh ${BOOK_FOLDER}
 
 .PHONY: cross-ref-lint
-figures-lint:
+cross-ref-lint:
 	#
 	# ################################################################################
 	# >>> TARGET: cross-ref-lint
