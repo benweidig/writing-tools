@@ -12,6 +12,13 @@ if [[ -n "$DEBUG" ]]; then
     set -x
 fi
 
+# During testing my Mac didn't support all unicode glyphs
+# in Courier, so we switch to Courier-New, which isn't
+# available on Linux. Not the best solution, but a working one.
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    FONT="Courier-New"
+fi
+
 command -v "convert" > /dev/null 2>&1
 # shellcheck disable=SC2181
 if [[ $? -ne 0 ]]; then
