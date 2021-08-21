@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>ora+nfpvvqbp@argmthg.arg</string>
+	<key>contactName</key>
+	<string>Ben Weidig</string>
+	<key>description</key>
+	<string>Asciidoc Grammer and O'Reilly Atlas Snippets</string>
+	<key>name</key>
+	<string>Asciidoc</string>
+	<key>uuid</key>
+	<string>D10BF25C-780C-4D40-AA9D-FF47BE028F33</string>
+</dict>
+</plist>

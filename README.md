@@ -6,7 +6,8 @@ But they might be helpful for others, so I decided to make a public repo for the
 # Atlas
 
 * [Atlas Documentation](https://docs.atlas.oreilly.com)
-* [VSCode Snippets](snippets/README.md)
+* [VSCode Snippets](vscode/README.md)
+* [Textastic Snippets](textastic/README.md)
 * [Atlas Scripts](scripts/README.md)
 
 # O'Reilly Guides

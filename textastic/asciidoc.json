@@ -1,0 +1,312 @@
+{
+    "description": "Textastic Code Completion for AsciiDoc in OReilly Atlas",
+    "uuid": "A3D7D200-0262-11EC-BBFB-1E00EA3EDC81",
+    "completionSets": [
+        {
+            "name": "asciidoc.snippets.headers",
+            "strings": [
+                {
+                    "string": "header: chapter (==)",
+                    "replace": "[[${2:unique_chapter_id}]]\n== ${1:chapter title}\n\n${3:content}\n"
+                },
+                {
+                    "string": "header: a (===)",
+                    "replace": "=== ${1:a-head title}\n\n${2:content}\n"
+                },
+                {
+                    "string": "header: b (====)",
+                    "replace": "==== ${1:b-head title}\n\n${2:content}\n"
+                },
+                {
+                    "string": "header: c (=====)",
+                    "replace": "===== ${1:c-head title}\n\n${2:content}\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.snippets.content-parts",
+            "strings": [
+                {
+                    "string": "content: part",
+                    "replace": "[[${2:unique_part_id}]]\n[part]\n== ${1:part title}\n\n[partintro]\n--\n${3:content}\n--\n"
+                },
+                {
+                    "string": "content: preface",
+                    "replace": "[preface]\n== ${1:preface title}\n\n${2:content}\n"
+                },
+                {
+                    "string": "content: foreword",
+                    "replace": "[foreword]\n== Foreword\n\n${2:content}\n[role=\"byline\"]\n${1:foreword author}\n"
+                },
+                {
+                    "string": "content: afterword",
+                    "replace": "[appendix]\n[role=\"afterword\"]\n== Afterword\n\n${1:content}\n"
+                },
+                {
+                    "string": "content: dedication",
+                    "replace": "[dedication]\n== Dedication\n\n${1:content}\n"
+                },
+                {
+                    "string": "content: appendix",
+                    "replace": "[appendix]\n[[${2:unique_appendix_id}]]\n== ${1:appendix title}\n\n${3:content}\n"
+                },
+                {
+                    "string": "content: glossary",
+                    "replace": "[[glossary]]\n== Glossary\n\n[glossary]\n\n${1:content}\n"
+                },
+                {
+                    "string": "content: glossary term",
+                    "replace": "${1:term}::${2:definition}\n"
+                },
+                {
+                    "string": "content: chapter contributor",
+                    "replace": "[role=\"byline\"]\n\n${1:content}\n"
+                },
+                {
+                    "string": "content: chapter contributor (2nd+)",
+                    "replace": "[role=\"byline cont\"]\n\n${1:content}\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.snippets.boxes",
+            "strings": [
+                {
+                    "string": "box: sidebar",
+                    "replace": ".${1:sidebar title}\n****\n${2:content}\n****\n"
+                },
+                {
+                    "string": "box: note",
+                    "replace": "[NOTE]\n====\n${1:content}\n====\n"
+                },
+                {
+                    "string": "box: tip",
+                    "replace": ".${1:title}\n[TIP]\n====\n${2:content}\n====\n"
+                },
+                {
+                    "string": "box: warning",
+                    "replace": ".${1:title}\n[WARNING]\n====\n${2:content}\n====\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.snippets.lists",
+            "strings": [
+                {
+                    "string": "list: bulleted",
+                    "replace": "* ${1:item}\n"
+                },
+                {
+                    "string": "list: ordered",
+                    "replace": ". ${1:item}\n"
+                },
+                {
+                    "string": "list: labelled",
+                    "replace": "${1:label}::\n  ${2:definition}\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.snippets.code",
+            "strings": [
+                {
+                    "string": "code: highlighted formal",
+                    "replace": "[[${2:unique_ref_id]]\n.${1:title}\n====\n[source,${3:type}]\n----\n${4:code}\n----\n====\n"
+                },
+                {
+                    "string": "code: highlighted simple",
+                    "replace": "[source,${1:type}]\n----\n${2:code}\n----\n"
+                },
+                {
+                    "string": "code: formal",
+                    "replace": "[[${2:unique_ref_id]]\n.${1:title}\n====\n----\n${3:code}\n----\n====\n"
+                },
+                {
+                    "string": "code: simple",
+                    "replace": "----\n${1:code}\n----\n"
+                },
+                {
+                    "string": "code: external formal",
+                    "replace": "[[${2:unique_ref_id]]\n.${1:title}\n====\n----\ninclude::${3:path to code}[]\n----\n====\n"
+                },
+                {
+                    "string": "code: external simple",
+                    "replace": "----\ninclude::${1:path to code}[]\n----\n"
+                },
+                {
+                    "string": "code: external highlighted formal",
+                    "replace": "[[${2:unique_ref_id]]\n.${1:title}\n====\n[source,${3:type}]\n----\ninclude::${4:path to code}[]\n----\n====\n"
+                },
+                {
+                    "string": "code: external highlighted simple",
+                    "replace": "[source,${1:type}]\n----\ninclude::${2:path to code}[]\n----\n"
+                },
+                {
+                    "string": "code: callout",
+                    "replace": "<${1:number}> ${2:content}\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.snippets.inline",
+            "strings": [
+                {
+                    "string": "_italic_",
+                    "replace": "_${1:text}_"
+                },
+                {
+                    "string": "format: _italic_",
+                    "replace": "_${1:text}_"
+                },
+                {
+                    "string": "*bold*",
+                    "replace": "*${1:text}*"
+                },
+                {
+                    "string": "format: *bold*",
+                    "replace": "*${1:text}*"
+                },
+                {
+                    "string": "+constant width+",
+                    "replace": "+${1:text}+"
+                },
+                {
+                    "string": "format: +constant width+",
+                    "replace": "+${1:text}+"
+                },
+                {
+                    "string": "~subscript~",
+                    "replace": "~${1:text}~"
+                },
+                {
+                    "string": "format: ~subscript~",
+                    "replace": "~${1:text}~"
+                },
+                {
+                    "string": "^superscript^",
+                    "replace": "^${1:text}^"
+                },
+                {
+                    "string": "format: ^superscript^",
+                    "replace": "^${1:text}^"
+                },
+                {
+                    "string": "latexmath: inline",
+                    "replace": "latexmath:[\\(${1:equation\\)]"
+                },
+                {
+                    "string": "format: latexmath",
+                    "replace": "latexmath:[\\(${1:equation\\)]"
+                },
+                {
+                    "string": "passthrough: inline",
+                    "replace": "pass:[${1:inline html}]"
+                },
+                {
+                    "string": "format: passthrough",
+                    "replace": "pass:[${1:inline html}]"
+                },
+                {
+                    "string": "hyperlink",
+                    "replace": "${1:url}[${2:title}]"
+                },
+                {
+                    "string": "cross-ref",
+                    "replace": "<<${1:target_id}>>"
+                },
+                {
+                    "string": "xref",
+                    "replace": "<<${1:target_id}>>"
+                },
+                {
+                    "string": "footnote",
+                    "replace": "footnote:[${1:text}]"
+                },
+                {
+                    "string": "fn (footnote)",
+                    "replace": "footnote:[${1:text}]"
+                },
+                {
+                    "string": "line-break-prevention",
+                    "replace": "pass:[<span class=\"keep-together\">${1:text}</span>]"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.figures-and-images",
+            "strings": [
+                {
+                    "string": "figure",
+                    "replace": "[[${1:unique_id}]]\n.${2:figure title}\nimage::${3:figure path}[\"${4:alt text}\"]\n"
+                },
+                {
+                    // Image
+                    "string": "image",
+                    "replace": "image::${1:image path}[\"${2:alt text}\"]\n"
+                }
+            ]
+        },
+        {
+            "name": "asciidoc.blocks",
+            "strings": [
+                {
+                    "string": "quote",
+                    "replace": "[quote, ${1:author}]\n____\n${2:text}\n____\n"
+                },
+                {
+                    "string": "block: quote",
+                    "replace": "[quote, ${1:author}]\n____\n${2:text}\n____\n"
+                },
+                {
+                    "string": "table",
+                    "replace": ".${1:table title}\n|=======\n|${2:Header Col 1|Header Col 2|Header Col 3}\n|${3:Content Col 1|Content Col 2|Content Col 3}\n|=======\n"
+                },
+                {
+                    "string": "block: table",
+                    "replace": ".${1:table title}\n|=======\n|${2:Header Col 1|Header Col 2|Header Col 3}\n|${3:Content Col 1|Content Col 2|Content Col 3}\n|=======\n"
+                },
+                {
+                    "string": "latexmath: block",
+                    "replace": "[latexmath]\n++++\n\\begin{equation}\n${1:equations}\n\\end{equation}\n++++\n"
+                },
+                {
+                    "string": "block: latexmath",
+                    "replace": "[latexmath]\n++++\n\\begin{equation}\n${1:equations}\n\\end{equation}\n++++\n"
+                },
+                {
+                    "string": "passthrough: block",
+                    "replace": "++++\n${1:html}\n++++\n"
+                },
+                {
+                    "string": "block: passthrough",
+                    "replace": "++++\n${1:html}\n++++\n"
+                }
+            ]
+        }
+    ],
+    "contexts": [
+        {
+            "description": "Asciidoc Blocks",
+            "scope": "text.asciidoc",
+            "pattern": "^(.*)",
+            "completionCaptureIndex": 1,
+            "completionSetNames": [
+                "asciidoc.snippets.headers",
+                "asciidoc.snippets.code",
+                "asciidoc.snippets.content-parts",
+                "asciidoc.snippets.boxes",
+                "asciidoc.snipptes.blocks",
+                "asciidoc.snippets.lists"
+            ]
+        },
+        {
+            "description": "Asciidoc Inline",
+            "scope": "text.asciidoc",
+            "pattern": "(?<![\\w\\d])([\\w\\*~\\[^!]+)",
+            "completionCaptureIndex": 1,
+            "completionSetNames": [
+                "asciidoc.snippets.inline"
+            ]
+        }
+    ]
+}
