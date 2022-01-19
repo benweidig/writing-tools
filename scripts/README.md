@@ -29,7 +29,13 @@ Requires `convert` (ImageMagick).
 
 Validates that all used cross-references are found.
 
-Must be called with the figures folder as first argument.
+Must be called with the root book folder as first argument.
+
+## headers-lint.sh
+
+Validates that no monospace is used in headers.
+
+Must be called with the root book folder as first argument.
 
 ## Makefile
 
