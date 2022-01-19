@@ -2,7 +2,7 @@ BOOK_FOLDER := .
 FIGURES_FOLDER := figures
 
 .PHONY: lint
-lint: atlas-lint figures-lint cross-ref-lint
+lint: atlas-lint figures-lint cross-ref-lint headers-lint
 
 .PHONY: atlas-lint
 atlas-lint:
@@ -40,3 +40,12 @@ cross-ref-lint:
 	# ################################################################################
 	#
 	./scripts/cross-ref-lint.sh ${ROOT_FOLDER}
+
+.PHONY: headers-lint
+headers-lint:
+	#
+	# ################################################################################
+	# >>> TARGET: headers-lint
+	# ################################################################################
+	#
+	./scripts/headers-lint.sh ${ROOT_FOLDER}
