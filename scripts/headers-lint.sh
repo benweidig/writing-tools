@@ -15,7 +15,7 @@ for BOOK_FILE in "$1"/*.asciidoc; do
 
     readarray -t PROBLEMS < <(grep -nE '^=+ .*\+.+\+.*$' "$BOOK_FILE")
 
-    if [[ $? -eq 0 ]]; then
+    if [[ $? -eq 0 ]] && [[ ${#PROBLEMS[@]} -gt 0 ]]; then
 
         for PROBLEM in "${PROBLEMS[@]}"; do
             printf "%s:%s\n" "$BOOK_FILE" "$PROBLEM"
