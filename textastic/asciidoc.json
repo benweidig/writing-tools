@@ -192,11 +192,11 @@
                 },
                 {
                     "string": "latexmath: inline",
-                    "replace": "latexmath:[\\(${1:equation\\)]"
+                    "replace": "latexmath:[\\(${1:equation}\\)]"
                 },
                 {
                     "string": "format: latexmath",
-                    "replace": "latexmath:[\\(${1:equation\\)]"
+                    "replace": "latexmath:[\\(${1:equation}\\)]"
                 },
                 {
                     "string": "passthrough: inline",
