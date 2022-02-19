@@ -344,7 +344,7 @@
     },
     "Atlas: LaTeX Math (Inline)": {
         "prefix": "atlas-latexmath-inline",
-        "body": "latexmath:[\\(${0:equation\\)]"
+        "body": "latexmath:[\\(${0:${TM_SELECTED_TEXT:equation}}\\)]"
     },
     "Atlas: LaTeX Math (Block)": {
         "prefix": "atlas-latexmath-block",
