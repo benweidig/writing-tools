@@ -240,7 +240,6 @@
                     "replace": "[[${1:unique_id}]]\n.${2:figure title}\nimage::${3:figure path}[\"${4:alt text}\"]\n"
                 },
                 {
-                    // Image
                     "string": "image",
                     "replace": "image::${1:image path}[\"${2:alt text}\"]\n"
                 }
